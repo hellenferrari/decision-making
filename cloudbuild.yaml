@@ -1,2 +1,4 @@
-runtime: nodejs
-env: flex
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/hellenferrari/decision-making-app.git']
+  env: ['PROJECT_ROOT=decision-making-app']
